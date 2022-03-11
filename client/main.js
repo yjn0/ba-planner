@@ -7,7 +7,6 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/App';
-import Error from './components/Error';
 
 const renderApp = (element) => {
   render(<App />, element);
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       render(<App />, rootElement)
     }
     catch (e) {
-      render(<Error error={e} />, rootElement);
+      render(<h1>Error: {e}</h1>, rootElement);
     }
   }
   else {
