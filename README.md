@@ -8,3 +8,5 @@
 * `install` - Install dependencies
 * `dev` - Start development server
 * `start` - Start production server
+* `serve` - Start webpack-dev-server for front end assets (dev)
+* `build` - Build webpack (prod)
